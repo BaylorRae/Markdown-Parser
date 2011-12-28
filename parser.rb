@@ -8,3 +8,10 @@ get "/" do
     
   markdown.render("## This is an H2 Tag!\nAwesome huh?")
 end
+
+post "/parse" do
+  markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML,
+    :autolink => true, :space_after_headers => true)
+    
+  markdown.render(params[:markdown])
+end
