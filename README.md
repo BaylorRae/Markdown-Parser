@@ -1,1 +1,1 @@
-This is the app I use to convert my WordPress posts to HTML. The app uses Sinatra and Redcarpet.
+This is the app I use to convert my WordPress posts to HTML. It uses Sinatra and Redcarpet.
